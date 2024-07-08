@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href='/stylesheets/style.css')
+    title New Message
+  body
+    h1 POST YOUR MESSAGES
+    form(method="POST" action="/new")
+      div
+        label(for="author") Author:
+        input(type="text" id="author" name="nameText" placeholder="name..." required)
+      div
+        label(for="message") Message:
+        input(type="text" id="message" name="messageText" placeholder="message..." required)
+      div
+        button(type="submit") SEND
